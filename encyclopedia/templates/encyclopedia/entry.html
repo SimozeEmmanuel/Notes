@@ -1,0 +1,14 @@
+
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }}
+{% endblock %}
+
+{% block body %}
+    {{ entry|safe }}
+    <div class="view overlay zoom btnicon">
+        <a href="/wiki/{{ entryTitle }}/edit"><button type="button" class="btn btn-outline-success hampton">Edit:</button></a>
+    </div>
+
+{% endblock %}

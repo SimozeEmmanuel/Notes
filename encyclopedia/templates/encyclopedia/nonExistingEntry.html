@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }} not found!
+{% endblock %}
+
+{% block body %}
+
+    <div class="errorh">
+    <center><h1><b>Error Encountered</h1></center>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Error 404: Not found</h4><a href="/">Click here to return to the homepage</a>
+        <br>
+        <a href="{% url 'NewPage' %}">Click here to create your desired new page.</a>
+        <br>
+    </div>
+
+
+{% endblock %}
